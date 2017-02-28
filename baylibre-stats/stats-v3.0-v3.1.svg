@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+ width="1200" height="800" 
+ viewBox="0 0 1200 800"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>Gnuplot</title>
+<desc>Produced by GNUPLOT 4.6 patchlevel 4 </desc>
+
+<g id="gnuplot_canvas">
+
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff"/>
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5'/>
+	<path id='gpPt0' stroke-width='0.222' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.222' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.222' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.222' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.222' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.222' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.222' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+</defs>
+<g style="fill:none; color:#FFFFFF; stroke:black; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M63.6,694.0 L72.6,694.0  h0.01'/>	<g transform="translate(55.3,698.5)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 0</text>
+	</g>
+	<path stroke='black'  d='M63.6,609.3 L72.6,609.3  h0.01'/>	<g transform="translate(55.3,613.8)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 5</text>
+	</g>
+	<path stroke='black'  d='M63.6,524.7 L72.6,524.7  h0.01'/>	<g transform="translate(55.3,529.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 10</text>
+	</g>
+	<path stroke='black'  d='M63.6,440.0 L72.6,440.0  h0.01'/>	<g transform="translate(55.3,444.5)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 15</text>
+	</g>
+	<path stroke='black'  d='M63.6,355.3 L72.6,355.3  h0.01'/>	<g transform="translate(55.3,359.8)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 20</text>
+	</g>
+	<path stroke='black'  d='M63.6,270.7 L72.6,270.7  h0.01'/>	<g transform="translate(55.3,275.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 25</text>
+	</g>
+	<path stroke='black'  d='M63.6,186.0 L72.6,186.0  h0.01'/>	<g transform="translate(55.3,190.5)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 30</text>
+	</g>
+	<path stroke='black'  d='M63.6,101.4 L72.6,101.4  h0.01'/>	<g transform="translate(55.3,105.9)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 35</text>
+	</g>
+	<path stroke='black'  d='M63.6,16.7 L72.6,16.7  h0.01'/>	<g transform="translate(55.3,21.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 40</text>
+	</g>
+	<path stroke='black'  d='M322.4,694.0 L322.4,685.0  h0.01'/>	<g transform="translate(325.8,702.3) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:9.00pt; text-anchor:start">
+		<text>Patrick Titiano</text>
+	</g>
+	<path stroke='black'  d='M581.3,694.0 L581.3,685.0  h0.01'/>	<g transform="translate(584.7,702.3) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:9.00pt; text-anchor:start">
+		<text>Kevin Hilman</text>
+	</g>
+	<path stroke='black'  d='M840.1,694.0 L840.1,685.0  h0.01'/>	<g transform="translate(843.5,702.3) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:9.00pt; text-anchor:start">
+		<text>Benoit Cousson</text>
+	</g>
+	<path stroke='black'  d='M1098.9,694.0 L1089.9,694.0  h0.01'/>	<g transform="translate(1107.2,698.5)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text> 0</text>
+	</g>
+	<path stroke='black'  d='M1098.9,599.4 L1089.9,599.4  h0.01'/>	<g transform="translate(1107.2,603.9)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text> 500</text>
+	</g>
+	<path stroke='black'  d='M1098.9,504.8 L1089.9,504.8  h0.01'/>	<g transform="translate(1107.2,509.3)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text> 1000</text>
+	</g>
+	<path stroke='black'  d='M1098.9,410.2 L1089.9,410.2  h0.01'/>	<g transform="translate(1107.2,414.7)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text> 1500</text>
+	</g>
+	<path stroke='black'  d='M1098.9,315.6 L1089.9,315.6  h0.01'/>	<g transform="translate(1107.2,320.1)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text> 2000</text>
+	</g>
+	<path stroke='black'  d='M1098.9,221.0 L1089.9,221.0  h0.01'/>	<g transform="translate(1107.2,225.5)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text> 2500</text>
+	</g>
+	<path stroke='black'  d='M1098.9,126.4 L1089.9,126.4  h0.01'/>	<g transform="translate(1107.2,130.9)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text> 3000</text>
+	</g>
+	<path stroke='black'  d='M1098.9,31.8 L1089.9,31.8  h0.01'/>	<g transform="translate(1107.2,36.3)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text> 3500</text>
+	</g>
+	<path stroke='black'  d='M63.6,16.7 L63.6,694.0 L1098.9,694.0 L1098.9,16.7 L63.6,16.7 Z  h0.01'/>	<g transform="translate(17.6,355.4) rotate(270)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text>Commits Count</text>
+	</g>
+	<g transform="translate(1170.4,355.4) rotate(270)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text>Lines Changed</text>
+	</g>
+</g>
+	<g id="gnuplot_plot_1" ><title>gnuplot_plot_1</title>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(1031.8,39.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text>Commits</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '1040.1,39.2 1082.3,39.2 1082.3,30.2 1040.1,30.2 '/>
+	</g>
+	<path stroke='black'  d='M1040.1,39.2 L1082.3,39.2 L1082.3,30.2 L1040.1,30.2 L1040.1,39.2 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '469.6,694.0 498.8,694.0 498.8,169.0 469.6,169.0 '/>
+	</g>
+	<path stroke='black'  d='M469.6,694.0 L469.6,169.1 L498.7,169.1 L498.7,694.0 L469.6,694.0 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '728.5,694.0 757.7,694.0 757.7,101.3 728.5,101.3 '/>
+	</g>
+	<path stroke='black'  d='M728.5,694.0 L728.5,101.4 L757.6,101.4 L757.6,694.0 L728.5,694.0 Z  h0.01'/></g>
+	</g>
+	<g id="gnuplot_plot_2" ><title>gnuplot_plot_2</title>
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(1031.8,57.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text>Lines+</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '1040.1,57.2 1082.3,57.2 1082.3,48.2 1040.1,48.2 '/>
+	</g>
+	<path stroke='black'  d='M1040.1,57.2 L1082.3,57.2 L1082.3,48.2 L1040.1,48.2 L1040.1,57.2 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '502.0,694.0 531.2,694.0 531.2,616.7 502.0,616.7 '/>
+	</g>
+	<path stroke='black'  d='M502.0,694.0 L502.0,616.8 L531.1,616.8 L531.1,694.0 L502.0,694.0 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '760.8,694.0 790.0,694.0 790.0,395.0 760.8,395.0 '/>
+	</g>
+	<path stroke='black'  d='M760.8,694.0 L760.8,395.1 L789.9,395.1 L789.9,694.0 L760.8,694.0 Z  h0.01'/></g>
+	</g>
+	<g id="gnuplot_plot_3" ><title>gnuplot_plot_3</title>
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(1031.8,75.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text>Lines-</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '1040.1,75.2 1082.3,75.2 1082.3,66.2 1040.1,66.2 '/>
+	</g>
+	<path stroke='black'  d='M1040.1,75.2 L1082.3,75.2 L1082.3,66.2 L1040.1,66.2 L1040.1,75.2 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '534.3,694.0 563.6,694.0 563.6,500.0 534.3,500.0 '/>
+	</g>
+	<path stroke='black'  d='M534.3,694.0 L534.3,500.1 L563.5,500.1 L563.5,694.0 L534.3,694.0 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '793.2,694.0 822.4,694.0 822.4,467.1 793.2,467.1 '/>
+	</g>
+	<path stroke='black'  d='M793.2,694.0 L793.2,467.2 L822.3,467.2 L822.3,694.0 L793.2,694.0 Z  h0.01'/></g>
+	</g>
+	<g id="gnuplot_plot_4" ><title>gnuplot_plot_4</title>
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(1031.8,93.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text>Signed-off-by</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '1040.1,93.2 1082.3,93.2 1082.3,84.2 1040.1,84.2 '/>
+	</g>
+	<path stroke='black'  d='M1040.1,93.2 L1082.3,93.2 L1082.3,84.2 L1040.1,84.2 L1040.1,93.2 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '566.7,694.0 595.9,694.0 595.9,456.8 566.7,456.8 '/>
+	</g>
+	<path stroke='black'  d='M566.7,694.0 L566.7,456.9 L595.8,456.9 L595.8,694.0 L566.7,694.0 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '825.5,694.0 854.7,694.0 854.7,490.7 825.5,490.7 '/>
+	</g>
+	<path stroke='black'  d='M825.5,694.0 L825.5,490.8 L854.6,490.8 L854.6,694.0 L825.5,694.0 Z  h0.01'/></g>
+	</g>
+	<g id="gnuplot_plot_5" ><title>gnuplot_plot_5</title>
+<g style="fill:none; color:#157545; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(1031.8,111.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text>Reported-by</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '1040.1,111.2 1082.3,111.2 1082.3,102.2 1040.1,102.2 '/>
+	</g>
+	<path stroke='black'  d='M1040.1,111.2 L1082.3,111.2 L1082.3,102.2 L1040.1,102.2 L1040.1,111.2 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '340.2,694.0 369.4,694.0 369.4,677.0 340.2,677.0 '/>
+	</g>
+	<path stroke='black'  d='M340.2,694.0 L340.2,677.1 L369.3,677.1 L369.3,694.0 L340.2,694.0 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '599.0,694.0 628.3,694.0 628.3,677.0 599.0,677.0 '/>
+	</g>
+	<path stroke='black'  d='M599.0,694.0 L599.0,677.1 L628.2,677.1 L628.2,694.0 L599.0,694.0 Z  h0.01'/></g>
+	</g>
+	<g id="gnuplot_plot_6" ><title>gnuplot_plot_6</title>
+<g style="fill:none; color:#000094; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(1031.8,129.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text>Tested-by</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '1040.1,129.2 1082.3,129.2 1082.3,120.2 1040.1,120.2 '/>
+	</g>
+	<path stroke='black'  d='M1040.1,129.2 L1082.3,129.2 L1082.3,120.2 L1040.1,120.2 L1040.1,129.2 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '631.4,694.0 660.6,694.0 660.6,389.1 631.4,389.1 '/>
+	</g>
+	<path stroke='black'  d='M631.4,694.0 L631.4,389.2 L660.5,389.2 L660.5,694.0 L631.4,694.0 Z  h0.01'/></g>
+	</g>
+	<g id="gnuplot_plot_7" ><title>gnuplot_plot_7</title>
+<g style="fill:none; color:#FF9900; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(1031.8,147.2)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text>Acked-by</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '1040.1,147.2 1082.3,147.2 1082.3,138.2 1040.1,138.2 '/>
+	</g>
+	<path stroke='black'  d='M1040.1,147.2 L1082.3,147.2 L1082.3,138.2 L1040.1,138.2 L1040.1,147.2 Z  h0.01'/>	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '663.8,694.0 693.0,694.0 693.0,507.6 663.8,507.6 '/>
+	</g>
+	<path stroke='black'  d='M663.8,694.0 L663.8,507.7 L692.9,507.7 L692.9,694.0 L663.8,694.0 Z  h0.01'/></g>
+	</g>
+	<g id="gnuplot_plot_8" ><title>gnuplot_plot_8</title>
+<g style="fill:none; color:#0099A1; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(229.4,673.7) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>0</text>
+	</g>
+	<g transform="translate(488.2,148.8) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>31</text>
+	</g>
+	<g transform="translate(747.0,81.1) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>35</text>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_9" ><title>gnuplot_plot_9</title>
+<g style="fill:none; color:#D6D645; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(264.6,673.7) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>0</text>
+	</g>
+	<g transform="translate(523.4,596.5) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>408</text>
+	</g>
+	<g transform="translate(782.2,374.8) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>1580</text>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_10" ><title>gnuplot_plot_10</title>
+<g style="fill:none; color:#A391FF; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(295.4,673.7) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>0</text>
+	</g>
+	<g transform="translate(554.2,479.8) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>1025</text>
+	</g>
+	<g transform="translate(813.0,446.9) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>1199</text>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_11" ><title>gnuplot_plot_11</title>
+<g style="fill:none; color:#FFCC00; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(330.6,673.7) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>0</text>
+	</g>
+	<g transform="translate(589.4,436.6) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>14</text>
+	</g>
+	<g transform="translate(848.2,470.5) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>12</text>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_12" ><title>gnuplot_plot_12</title>
+<g style="fill:none; color:#D60078; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(361.4,656.8) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>1</text>
+	</g>
+	<g transform="translate(620.2,656.8) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>1</text>
+	</g>
+	<g transform="translate(879.0,673.7) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>0</text>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_13" ><title>gnuplot_plot_13</title>
+<g style="fill:none; color:#ABD600; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(392.2,673.7) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>0</text>
+	</g>
+	<g transform="translate(651.0,368.9) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>18</text>
+	</g>
+	<g transform="translate(909.8,673.7) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>0</text>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_14" ><title>gnuplot_plot_14</title>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(423.0,673.7) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>0</text>
+	</g>
+	<g transform="translate(681.8,487.4) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>11</text>
+	</g>
+	<g transform="translate(940.6,673.7) rotate(-90)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>0</text>
+	</g>
+</g>
+	</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M63.6,16.7 L63.6,694.0 L1098.9,694.0 L1098.9,16.7 L63.6,16.7 Z  h0.01'/></g>
+</g>
+</svg>
+

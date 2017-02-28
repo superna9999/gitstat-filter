@@ -13,6 +13,13 @@ And added :
 - "-T" option to output a CSV table
 - "-F" option to handle only emails instead of Full or Short name to avoid duplications
 
+The script `linux_stats.sh` computes all BayLibre members Linux involvement stats since Linux 2.6.11 :
+```
+$ /path/to/linux_stats.sh
+```
+
+And will generate a bunch of `stats-v3.10-v3.11.svg`, ... available in this `baylibre-stats` directory.
+
 ### Examples :
 
 #### Find all contributions and involvement of BayLibre in Linux 4.10
