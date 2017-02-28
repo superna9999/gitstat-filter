@@ -75,6 +75,8 @@ class pager:
 # it just looks for full name <full email> and drops the full email
 #
 def name_from_email(line):
+    if options.email_only:
+        return email_only(line)
     line = line.lstrip()
     index = line.find('<')
     if index <= 1:
@@ -96,6 +98,8 @@ def email_only(line):
     return line[start + 1:end]
 
 def short_name(line):
+    if options.email_only:
+        return email_only(line)
     line = line.lstrip().rstrip().lower()
     name = name_from_email(line)
     words = name.split()
@@ -262,6 +266,67 @@ def print_diffstat(fp, pipe):
     print last
     fp.close()
 
+# Print report in a CSV table
+def print_csv_table():
+    stats_authors = {}
+
+    # Merge authors
+    for x in authors.keys():
+        ar = authors[x]
+        if options.full_name:
+            name = x
+        else:
+            name = ar[4]
+        #                                   C  l+ l- Si Re Te Ac
+        s = stats_authors.setdefault(name, [0, 0, 0, 0, 0, 0, 0])
+
+    for x in involved.keys():
+        ar = involved[x]
+        if options.full_name:
+            name = x
+        else:
+            name = ar[1]
+        #                                   C  l+ l- Si Re Te Ac
+        s = stats_authors.setdefault(name, [0, 0, 0, 0, 0, 0, 0])
+
+    # Fillup stats
+    for x in authors.keys():
+        ar = authors[x]
+        if options.full_name:
+            name = x
+        else:
+            name = ar[4]
+
+        s = stats_authors.get(name)
+        s[0] += ar[0]
+        s[1] += ar[1]
+        s[2] += ar[2]
+
+    for x in involved.keys():
+        ar = involved[x]
+        if options.full_name:
+            name = x
+        else:
+            name = ar[1]
+
+        s = stats_authors.get(name)
+
+        for tag in ar[0]:    
+            if "Signed-off-by" in tag:
+                s[3] += 1
+            elif "Reported-by" in tag:
+                s[4] += 1
+            elif "Tested-by" in tag:
+                s[5] += 1
+            elif "Acked-by" in tag:
+                s[6] += 1
+
+    print >> output, "Author;Commits;Lines+;Lines-;Signed-off-by;Reported-by;Tested-by;Acked-by"
+
+    for name in stats_authors.keys():
+        s = stats_authors.get(name)
+        print >> output, "%s;%d;%d;%d;%d;%d;%d;%d" % (name, s[0], s[1], s[2], s[3], s[4], s[5], s[6])
+
 def setup_email_hash():
     global email_hash
 
@@ -413,6 +478,10 @@ parser.add_option("-A", "--author-filter", help="Author git log filtering",
                   default=[], action="append")
 parser.add_option("-G", "--grep-filter", help="Git log grep filtering",
                   default=[], action="append")
+parser.add_option("-T", "--csv-output", help="CSV Table output",
+                  default=False, action="store_true")
+parser.add_option("-F", "--email-only", help="Only use email as name",
+                  default=False, action="store_true")
 
 (options,args) = parser.parse_args()
 
@@ -477,6 +546,12 @@ if cur:
     add_commit(cur, added, removed, diffpipe)
 
 output = pager()
+
+if options.csv_output:
+	print_csv_table()
+	print >> output, ""
+	output.close()
+	sys.exit(0)
 
 if options.report_header:
     print >> output, options.report_header
