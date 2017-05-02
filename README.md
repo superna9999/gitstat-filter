@@ -20,6 +20,11 @@ $ /path/to/linux_stats.sh
 
 And will generate a bunch of `stats-v3.10-v3.11.svg`, ... available in this `baylibre-stats` directory.
 
+Optionnally, you can specify a range of tags or branches to speed up the generation :
+```
+$ /path/to/linux_stats.sh "v4.10 v4.11"
+```
+
 ### Examples :
 
 #### Find all contributions and involvement of BayLibre in Linux 4.10
