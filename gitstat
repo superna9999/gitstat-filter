@@ -155,7 +155,7 @@ def is_selected_author(author):
 # criteria.  It also feeds the commit to diffstat if
 # appropriate.
 #
-def add_commit(lines, added, removed, diffpipe):
+def add_commit(lines, added, removed, diffpipe, changed):
     # we don't want any merge commits
     if lines[1].startswith('Merge'):
         return
@@ -205,8 +205,8 @@ def add_commit(lines, added, removed, diffpipe):
             author = short
 
         # total commit, total lines added, removed, commit rec, name
-        ar = authors.setdefault(author, [0, 0, 0, [], short])
-        commit = [[commit.rstrip().lstrip()], added, removed]
+        ar = authors.setdefault(author, [0, 0, 0, [], short, 0])
+        commit = [[commit.rstrip().lstrip()], added, removed, changed]
         if options.commit_text:
             for x in lines[5:]:
                 if x.startswith('diff --git') or x.startswith('--- '):
@@ -224,6 +224,7 @@ def add_commit(lines, added, removed, diffpipe):
         ar[1] += added
         ar[2] += removed
         ar[3].append(commit)
+	ar[5] += changed
 
 # fire up diffstat, writing output to a temp file.  Return the
 # tmp file and the diffstat pipe.
@@ -277,8 +278,8 @@ def print_csv_table():
             name = x
         else:
             name = ar[4]
-        #                                   C  l+ l- Si Re Te Ac
-        s = stats_authors.setdefault(name, [0, 0, 0, 0, 0, 0, 0])
+        #                                   C  l+ l- Si Re Te Ac FC
+        s = stats_authors.setdefault(name, [0, 0, 0, 0, 0, 0, 0, 0])
 
     for x in involved.keys():
         ar = involved[x]
@@ -286,8 +287,8 @@ def print_csv_table():
             name = x
         else:
             name = ar[1]
-        #                                   C  l+ l- Si Re Te Ac
-        s = stats_authors.setdefault(name, [0, 0, 0, 0, 0, 0, 0])
+        #                                   C  l+ l- Si Re Te Ac FC
+        s = stats_authors.setdefault(name, [0, 0, 0, 0, 0, 0, 0, 0])
 
     # Fillup stats
     for x in authors.keys():
@@ -301,6 +302,7 @@ def print_csv_table():
         s[0] += ar[0]
         s[1] += ar[1]
         s[2] += ar[2]
+        s[7] += ar[5]
 
     for x in involved.keys():
         ar = involved[x]
@@ -321,11 +323,11 @@ def print_csv_table():
             elif "Acked-by" in tag:
                 s[6] += 1
 
-    print >> output, "Author;Commits;Lines+;Lines-;Signed-off-by;Reported-by;Tested-by;Acked-by"
+    print >> output, "Author;Commits;Lines+;Lines-;Signed-off-by;Reported-by;Tested-by;Acked-by;Files Changes"
 
     for name in stats_authors.keys():
         s = stats_authors.get(name)
-        print >> output, "%s;%d;%d;%d;%d;%d;%d;%d" % (name, s[0], s[1], s[2], s[3], s[4], s[5], s[6])
+        print >> output, "%s;%d;%d;%d;%d;%d;%d;%d;%d" % (name, s[0], s[1], s[2], s[3], s[4], s[5], s[6], s[7])
 
 def setup_email_hash():
     global email_hash
@@ -495,6 +497,7 @@ options.email = ar
 
 added = 0
 removed = 0
+changed = 0
 in_diff = False
 
 # optionally start up diffstat
@@ -527,14 +530,16 @@ while True:
         break;
     if l.startswith('commit'):
         if cur:
-            add_commit(cur, added, removed, diffpipe)
+            add_commit(cur, added, removed, diffpipe, changed)
             cur = []
             added = 0
             removed = 0
+	    changed = 0
             in_diff = False
     if (l.startswith('+++ ') and cur[-1].startswith('--- ') and
         cur[-2].startswith('index ')):
         in_diff = True
+	changed += 1
     elif in_diff and not l.startswith('+++ ') and not l.startswith('--- '):
         if l.startswith('+'):
             added += 1
@@ -543,7 +548,7 @@ while True:
     cur.append(l)
 
 if cur:
-    add_commit(cur, added, removed, diffpipe)
+    add_commit(cur, added, removed, diffpipe, changed)
 
 output = pager()
 
