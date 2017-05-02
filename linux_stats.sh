@@ -5,7 +5,11 @@ FILTER="-a baylibre -a cousson -a titiano -a turquette -a narmstrong -a brgl -a 
 GITSTAT_PATH=$(dirname $0)
 
 # Get all linux tags since 2.6.x up to 9.x
-TAGS=$(git tag | grep -E "v[2-9].[0-9]+(.[0-9]+)?$" | sort -V)
+if [ -z "$1" ] ; then
+	TAGS=$(git tag | grep -E "v[2-9].[0-9]+(.[0-9]+)?$" | sort -V)
+else
+	TAGS=$1
+fi
 
 PREV=$(echo $TAGS | cut -d" " -f1)
 REVS=$(echo $TAGS | tr " " "\n" | grep -v $PREV)
