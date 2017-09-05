@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILTER="-a baylibre -a cousson -a titiano -a turquette -a narmstrong -a brgl -a khilman -a haslam -a bgolaszewski -a frode.isaksen@gmail.com -a superna"
+FILTER="-a baylibre -a cousson -a titiano -a turquette -a narmstrong -a khilman -a haslam -a bgolaszewski -a frode.isaksen@gmail.com -a superna"
 
 GITSTAT_PATH=$(dirname $0)
 
