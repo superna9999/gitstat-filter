@@ -20,6 +20,7 @@ for rev in $REVS ; do
 	gnuplot $GITSTAT_PATH/csv.plot > /dev/null 2>&1
 	if [ -e out.svg ] ; then
 		mv out.svg stats-$PREV-$rev.svg
+		mv out.csv stats-$PREV-$rev.csv
 	else
 		echo "No Stats for $PREV to $rev"
 	fi

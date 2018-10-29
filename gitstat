@@ -268,7 +268,7 @@ def print_diffstat(fp, pipe):
     fp.close()
 
 # Print report in a CSV table
-def print_csv_table():
+def print_csv_table(do_sum):
     stats_authors = {}
 
     # Merge authors
@@ -325,9 +325,30 @@ def print_csv_table():
 
     print >> output, "Author;Commits;Lines+;Lines-;Signed-off-by;Reported-by;Tested-by;Acked-by;Files Changes"
 
-    for name in stats_authors.keys():
-        s = stats_authors.get(name)
-        print >> output, "%s;%d;%d;%d;%d;%d;%d;%d;%d" % (name, s[0], s[1], s[2], s[3], s[4], s[5], s[6], s[7])
+    if do_sum:
+        sum0=0
+        sum1=0
+        sum2=0
+        sum3=0
+        sum4=0
+        sum5=0
+        sum6=0
+        sum7=0
+        for name in stats_authors.keys():
+            s = stats_authors.get(name)
+            sum0 = sum0 + s[0]
+            sum1 = sum1 + s[1]
+            sum2 = sum2 + s[2]
+            sum3 = sum3 + s[3]
+            sum4 = sum4 + s[4]
+            sum5 = sum5 + s[5]
+            sum6 = sum6 + s[6]
+            sum7 = sum7 + s[7]
+        print >> output, ";%d;%d;%d;%d;%d;%d;%d;%d" % (sum0, sum1, sum2, sum3, sum4, sum5, sum6, sum7)
+    else:
+        for name in stats_authors.keys():
+            s = stats_authors.get(name)
+            print >> output, "%s;%d;%d;%d;%d;%d;%d;%d;%d" % (name, s[0], s[1], s[2], s[3], s[4], s[5], s[6], s[7])
 
 def setup_email_hash():
     global email_hash
@@ -482,6 +503,8 @@ parser.add_option("-G", "--grep-filter", help="Git log grep filtering",
                   default=[], action="append")
 parser.add_option("-T", "--csv-output", help="CSV Table output",
                   default=False, action="store_true")
+parser.add_option("-U", "--csv-output-sum", help="CSV Table output (summed)",
+                  default=False, action="store_true")
 parser.add_option("-F", "--email-only", help="Only use email as name",
                   default=False, action="store_true")
 
@@ -552,8 +575,8 @@ if cur:
 
 output = pager()
 
-if options.csv_output:
-	print_csv_table()
+if options.csv_output or options.csv_output_sum:
+	print_csv_table(options.csv_output_sum)
 	print >> output, ""
 	output.close()
 	sys.exit(0)
